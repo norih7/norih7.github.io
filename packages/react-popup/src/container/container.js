@@ -1,7 +1,7 @@
 import React          from 'react';
 import { connect }    from 'react-redux';
 import { Popup }      from '../components/PopupComponents.jsx';
-import { MakeButton } from '../components/MakeButtonComponents.jsx';
+import { MakeButton } from '../components/MakeButtonComponents/Index.js';
 import {
     makePopupActionCreator, togglePopupActionCreator,
     thisSidePopupActionCreator
@@ -25,6 +25,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log('container',state);
     return {
         popup : state.popup
     };
