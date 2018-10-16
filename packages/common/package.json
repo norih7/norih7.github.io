@@ -1,16 +1,22 @@
 {
-  "name": "react-popup",
+  "name": "common",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "flow": "flow"
+    "flow": "flow",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/react": "^3.4.11",
     "babel-core": "^6.1.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^6.2.5",
@@ -18,6 +24,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.11.1",
+    "babel-runtime": "^6.26.0",
     "eslint": "^4.6.1",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-flowtype": "^2.39.1",
@@ -29,5 +36,10 @@
     "react-redux": "^5.0.6",
     "redux": "^3.6.0",
     "webpack": "^2.1.5"
+  },
+  "dependencies": {
+    "npm": "^6.4.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
   }
 }
