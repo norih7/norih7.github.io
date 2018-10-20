@@ -1,5 +1,6 @@
 module.exports = {
-    entry: "./src/index.js",
+    mode: "development",
+    entry: "./src/sample.js",
     output: {
         filename: "./dist/bundle.js",
     },
