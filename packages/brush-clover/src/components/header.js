@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Button from "@components/oraganisms/Button";
+import Button from "@components/oraganisms/Popup/Button";
 
 const Header = ({ siteTitle }) => (
     <div
