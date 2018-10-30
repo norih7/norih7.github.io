@@ -1,11 +1,11 @@
 // @flow
-import React from 'react';
+import React from "react";
 
 type Props = {
-    handleClick: any,
+    handleClick: any
 };
 
-export class MakeButton extends React.Component<Props> {
+export default class MakeButton extends React.Component<Props> {
     handleButtonClick: Function;
 
     constructor() {
@@ -19,7 +19,7 @@ export class MakeButton extends React.Component<Props> {
     render() {
         return (
             <div>
-                <button onClick={(e) => this.handleButtonClick(e)}>Make Popup</button>
+                <button onClick={e => this.handleButtonClick(e)}>Make Popup</button>
             </div>
         );
     }
