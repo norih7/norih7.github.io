@@ -4,7 +4,9 @@ var commonPath = "node_modules/common/";
 module.exports = {
     resolve: {
         alias: {
-            "@components": commonPath + "components"
+            "@containers": commonPath + "containers",
+            "@components": commonPath + "components",
+            "@stores": commonPath + "stores"
         }
     }
 };

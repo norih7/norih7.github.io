@@ -3,35 +3,39 @@ import { Link } from "gatsby";
 import Button from "@components/organisms/Popup/Button";
 import Error from "@components/organisms/ErrorComponent";
 
-const Header = ({ siteTitle }) => (
-    <div
-        style={{
-            background: "rebeccapurple",
-            marginBottom: "1.45rem"
-        }}
-    >
-        <Error />
+const Header = props => {
+    const { siteTitle, increment } = props;
+    return (
         <div
             style={{
-                margin: "0 auto",
-                maxWidth: 960,
-                padding: "1.45rem 1.0875rem"
+                background: "rebeccapurple",
+                marginBottom: "1.45rem"
             }}
         >
-            <Button />
-            <h1 style={{ margin: 0 }}>
-                <Link
-                    to="/"
-                    style={{
-                        color: "white",
-                        textDecoration: "none"
-                    }}
-                >
-                    {siteTitle}
-                </Link>
-            </h1>
+            <Error />
+            <div
+                style={{
+                    margin: "0 auto",
+                    maxWidth: 960,
+                    padding: "1.45rem 1.0875rem"
+                }}
+                onClick={increment}
+            >
+                <Button />
+                <h1 style={{ margin: 0 }}>
+                    <Link
+                        to="/"
+                        style={{
+                            color: "white",
+                            textDecoration: "none"
+                        }}
+                    >
+                        {siteTitle}
+                    </Link>
+                </h1>
+            </div>
         </div>
-    </div>
-);
+    );
+};
 
 export default Header;

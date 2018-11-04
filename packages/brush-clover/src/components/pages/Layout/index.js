@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
-import Header from "@components/organisms/Header";
+import Header from "@containers/Header";
 import "./index.css";
 
 const Layout = ({ children }) => (
