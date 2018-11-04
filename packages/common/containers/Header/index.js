@@ -6,7 +6,7 @@ const mapStateToProps = ({ count }) => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return { increment: () => dispatch({ type: `INCREMENT` }) };
+    return { increment: () => dispatch({ type: `FETCH` }) };
 };
 
 const HeaderConnect = connect(

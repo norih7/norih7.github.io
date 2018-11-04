@@ -6,7 +6,8 @@ module.exports = {
         alias: {
             "@containers": commonPath + "containers",
             "@components": commonPath + "components",
-            "@stores": commonPath + "stores"
+            "@stores": commonPath + "stores",
+            "@middlewares": commonPath + "middlewares"
         }
     }
 };
