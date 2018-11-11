@@ -1,0 +1,29 @@
+.slider-bg,
+.slider-active {
+    height: 3px;
+}
+.slider-bg {
+    position: relative;
+    width: 100px;
+    background: #aaa;
+}
+
+.slider-active {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20px;
+    background: #333;
+}
+
+.slider-active::after {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 10px;
+}
