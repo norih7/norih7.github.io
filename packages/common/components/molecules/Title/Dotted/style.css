@@ -1,0 +1,9 @@
+.title-dotted {
+    border-bottom: 1px solid #aaa;
+}
+
+.title-dotted h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 1em;
+}
