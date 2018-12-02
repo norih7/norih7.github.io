@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
-import Header from "@containers/Header";
+import Header from "../../../contaienrs/Header";
 import "./index.css";
 
 const Layout = ({ children }) => (
@@ -30,16 +30,7 @@ const Layout = ({ children }) => (
                         <html lang="ja" />
                     </Helmet>
                     <Header siteTitle={data.site.siteMetadata.title} />
-                    <div
-                        style={{
-                            margin: "0 auto",
-                            maxWidth: 960,
-                            padding: "0px 1.0875rem 1.45rem",
-                            paddingTop: 0
-                        }}
-                    >
-                        {children}
-                    </div>
+                    <div>{children}</div>
                 </ErrorBoundary>
             </>
         )}

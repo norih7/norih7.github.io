@@ -1,17 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-
 import Layout from "../components/pages/Layout";
 
-const IndexPage = () => {
-    return (
-        <Layout>
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-            <Link to="/page-2/">Go to page 2</Link>
-        </Layout>
-    );
-};
+const SecondPage = () => (
+    <Layout>
+        <h1>Hi from the second page</h1>
+        <p>Welcome to page 2</p>
+        <Link to="/">Go back to the homepage</Link>
+    </Layout>
+);
 
-export default IndexPage;
+export default SecondPage;

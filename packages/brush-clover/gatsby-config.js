@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "Gatsby Default Starter"
+        title: "brushclover"
     },
     plugins: [
         "gatsby-plugin-react-helmet",
@@ -17,6 +17,14 @@ module.exports = {
             }
         },
         "gatsby-plugin-offline",
-        "gatsby-plugin-flow"
+        "gatsby-plugin-flow",
+        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `src`,
+                path: `${__dirname}/src/pages/`
+            }
+        }
     ]
 };
