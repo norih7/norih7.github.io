@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
-import "./index.css";
+import "./index.module.css";
 
 const Layout = ({ children }) => (
     <StaticQuery
