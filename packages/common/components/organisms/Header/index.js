@@ -6,7 +6,7 @@ const Header = props => {
     const { siteTitle, increment } = props;
     return (
         <div className={css["header"]}>
-            <h1 style={{ margin: 0 }}>
+            <h1>
                 <Link
                     to="/"
                     style={{
@@ -14,7 +14,7 @@ const Header = props => {
                         textDecoration: "none"
                     }}
                 >
-                    {siteTitle}
+                    <span>{siteTitle}</span>
                 </Link>
             </h1>
         </div>

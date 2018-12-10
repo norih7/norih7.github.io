@@ -1,4 +1,46 @@
 .header {
     background: rgb(128, 177, 38);
-    padding: 100px;
+    padding: 60px 60px 80px 60px;
+}
+
+.header h1 {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.header h1 span {
+    display: block;
+    width: 200px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    background: rgb(128, 177, 38);
+    color: #fff;
+}
+
+.header h1 span::before,
+.header h1 span::after {
+    position: absolute;
+    content: "";
+    display: block;
+}
+
+.header h1 span::before {
+    width: 200px;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background: #fff;
+}
+
+.header h1 span::after {
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    left: 90px;
+    z-index: 1;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
 }

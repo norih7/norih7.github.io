@@ -1,0 +1,25 @@
+.skill {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 270px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.skill ul {
+    margin: 0;
+}
+.skill li {
+    list-style: none;
+}
+
+.tag {
+    padding: 4px 6px;
+    background: rgb(150, 147, 133);
+    margin-right: 8px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    color: #fff;
+}

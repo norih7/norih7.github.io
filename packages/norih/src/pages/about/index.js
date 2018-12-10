@@ -15,7 +15,7 @@ const css = {
     },
     tag: {
         padding: "5px",
-        background: "#aaa",
+        background: "#bbb",
         marginRight: "5px",
         fontSize: "0.8em",
         borderRadius: "3px",
@@ -40,44 +40,13 @@ const SecondPage = () => (
                         {[
                             { name: "ES2015", experience: "1年以上" },
                             { name: "Node.js", experience: "2年以上" },
-                            { name: "WebRTC", experience: "1年ほど" }
+                            { name: "WebRTC", experience: "1年ほど" },
+                            { name: "React/Redux", experience: "2年以上" },
+                            { name: "Storybook", experience: "1年ほど" },
+                            { name: "JS Test", experience: "1年以上" }
                         ]}
                     </SkillList>
-                    <section style={css["skill"]}>
-                        <h3>フロントエンド</h3>
-                        <ul>
-                            <li>
-                                <span style={css["tag"]}>1年以上</span>
-                                ES2015+
-                            </li>
-                            <li>
-                                <span style={css["tag"]}>2年以上</span>
-                                Node.js
-                            </li>
-                            <li>
-                                <span style={css["tag"]}>1年程度</span>
-                                WebRTC
-                            </li>
-                            <li>
-                                <span style={css["tag"]}>6年以上</span>
-                                HTML
-                            </li>
-                            <li>
-                                <span style={css["tag"]}>6年以上</span>
-                                CSS
-                            </li>
-                        </ul>
-                    </section>
-                    <section style={css["skill"]}>
-                        <h3>JS Framework</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>Storybook</li>
-                            <li>Jest</li>
-                            <li>Enzyme</li>
-                        </ul>
-                    </section>
+
                     <section style={css["skill"]}>
                         <h3>開発</h3>
                         <ul>
