@@ -9,11 +9,12 @@ export default function BlogPost({ data }) {
     return (
         <Layout>
             <div className={css["entry"]}>
-                <div className="blog-post">
+                <header>
                     <h1>{frontmatter.title}</h1>
-                    <h2>{frontmatter.date}</h2>
-                    <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
-                </div>
+                </header>
+
+                <p>{frontmatter.date}</p>
+                <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
             </div>
         </Layout>
     );
