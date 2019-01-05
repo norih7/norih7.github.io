@@ -1,5 +1,18 @@
 .entry {
     width: 880px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 25px;
+}
+
+.entry h1 {
+    font-size: 1.6rem;
+}
+
+.entry h2 {
+    font-size: 1.3rem;
+}
+
+.entry header {
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #333;
 }
