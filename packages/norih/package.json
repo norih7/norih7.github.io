@@ -1,10 +1,10 @@
 {
-    "name": "gatsby-starter-default",
+    "name": "norih",
     "description": "Gatsby default starter",
     "version": "1.0.0",
     "author": "Kyle Mathews <mathews.kyle@gmail.com>",
     "dependencies": {
-        "common": "~1.0.0",
+        "@react/common": "~1.0.0",
         "css-loader": "^1.0.1",
         "gatsby": "^2.0.60",
         "gatsby-plugin-flow": "^1.0.2",
@@ -26,7 +26,8 @@
         "build": "gatsby build",
         "develop": "gatsby develop",
         "format": "prettier --write '**/*.js'",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "add-entry": "bash src/scripts/addEntry/index.sh"
     },
     "devDependencies": {
         "@sentry/browser": "^4.2.3",

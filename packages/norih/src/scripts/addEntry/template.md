@@ -1,8 +1,8 @@
 ---
-path: "/profile"
-date: "2018-01-14"
+path: "/#PATH#"
+date: "#DATE#"
 title: "SampleTitle"
-tags: ["gatsby", "react"]
+tags: ["tag"]
 excerpt: "SampleExcerpt"
 ---
 

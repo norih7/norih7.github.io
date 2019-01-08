@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../../components/pages/Layout";
-import SkillList from "@components/organisms/SkillList";
+import SkillList from "@react/common/components/organisms/SkillList";
 
 const css = {
     skill: {
