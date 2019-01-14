@@ -4,6 +4,7 @@ const resolve = require(path.join(rootPath, "webpack.resolve.js"));
 const dotenv = require("dotenv").config({
     path: path.join(rootPath, ".env")
 });
+const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 
 // 現在のディレクトリのパスに置き換える
 // TODO: issue
