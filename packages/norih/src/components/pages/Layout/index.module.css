@@ -36,6 +36,11 @@ progress {
 template {
     display: none;
 }
+a:link,
+a:visited {
+    color: #3366cc;
+}
+
 a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -620,4 +625,9 @@ pre tt:after {
     html {
         font-size: 100%;
     }
+}
+.container {
+    width: 880px;
+    margin: 0 auto;
+    padding-top: 40px;
 }

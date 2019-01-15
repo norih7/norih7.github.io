@@ -4,7 +4,9 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
-import "./index.module.css";
+import css from "./index.module.css";
+
+console.log("!!!!", css);
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -30,7 +32,7 @@ const Layout = ({ children }) => (
                         <html lang="ja" />
                     </Helmet>
                     <Header siteTitle={data.site.siteMetadata.title} />
-                    <div>{children}</div>
+                    <div className={css["container"]}>{children}</div>
                 </ErrorBoundary>
             </>
         )}
