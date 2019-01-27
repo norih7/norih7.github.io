@@ -4,7 +4,6 @@ import Layout from "../components/pages/Layout";
 
 const IndexPage = props => {
     const postList = props.data.allMarkdownRemark;
-    console.log(postList);
     return (
         <Layout>
             {postList.edges.map(({ node }, i) => (

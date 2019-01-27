@@ -3,20 +3,23 @@ import { Link } from "gatsby";
 import css from "./style.module.css";
 
 const Header = props => {
-    const { siteTitle, increment } = props;
+    const { siteTitle, description, increment } = props;
     return (
         <div className={css["header"]}>
-            <h1>
-                <Link
-                    to="/"
-                    style={{
-                        color: "white",
-                        textDecoration: "none"
-                    }}
-                >
-                    <span>{siteTitle}</span>
-                </Link>
-            </h1>
+            <div className={css["container"]}>
+                <h1>
+                    <Link
+                        to="/"
+                        style={{
+                            color: "white",
+                            textDecoration: "none"
+                        }}
+                    >
+                        <span>{siteTitle}</span>
+                    </Link>
+                </h1>
+                <p className={css["description"]}>{description}</p>
+            </div>
         </div>
     );
 };

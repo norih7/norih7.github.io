@@ -6,6 +6,7 @@ import css from "./index.module.css";
 export default function BlogPost({ data }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
+    console.log("!!!!", frontmatter);
     return (
         <Layout>
             <div className={css["entry"]}>

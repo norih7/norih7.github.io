@@ -1,6 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: "norih"
+        title: "norih",
+        description: "WebEnginner Portfolio & Note"
     },
     plugins: [
         "gatsby-plugin-react-helmet",

@@ -6,8 +6,6 @@ import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
 import css from "./index.module.css";
 
-console.log("!!!!", css);
-
 const Layout = ({ children }) => (
     <StaticQuery
         query={graphql`
@@ -15,27 +13,32 @@ const Layout = ({ children }) => (
                 site {
                     siteMetadata {
                         title
+                        description
                     }
                 }
             }
         `}
-        render={data => (
-            <>
-                <ErrorBoundary>
-                    <Helmet
-                        title={data.site.siteMetadata.title}
-                        meta={[
-                            { name: "description", content: "Sample" },
-                            { name: "keywords", content: "sample, something" }
-                        ]}
-                    >
-                        <html lang="ja" />
-                    </Helmet>
-                    <Header siteTitle={data.site.siteMetadata.title} />
-                    <div className={css["container"]}>{children}</div>
-                </ErrorBoundary>
-            </>
-        )}
+        render={data => {
+            const { title, description } = data.site.siteMetadata;
+            console.log(title, description);
+            return (
+                <>
+                    <ErrorBoundary>
+                        <Helmet
+                            title={data.site.siteMetadata.title}
+                            meta={[
+                                { name: "description", content: "Sample" },
+                                { name: "keywords", content: "sample, something" }
+                            ]}
+                        >
+                            <html lang="ja" />
+                        </Helmet>
+                        <Header siteTitle={title} description={description} />
+                        <div className={css["container"]}>{children}</div>
+                    </ErrorBoundary>
+                </>
+            );
+        }}
     />
 );
 
