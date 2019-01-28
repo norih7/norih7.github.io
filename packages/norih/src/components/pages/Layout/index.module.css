@@ -627,7 +627,6 @@ pre tt:after {
     }
 }
 .container {
-    width: 880px;
+    width: 900px;
     margin: 0 auto;
-    padding-top: 40px;
 }
