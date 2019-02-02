@@ -45,17 +45,10 @@ const css = {
         width: "900px",
         margin: "0 auto"
     },
-    section: {
-        paddingTop: "60px"
-    }
+    section: {}
 };
 const SecondPage = () => (
     <Layout>
-        <header style={css["header"]}>
-            <div style={css["container"]}>
-                <h1 style={css["title"]}>About</h1>
-            </div>
-        </header>
         <section style={css["section"]}>
             <h2>Profile</h2>
             <p>
