@@ -1,0 +1,35 @@
+.header-menu {
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    background: rgb(64, 157, 185);
+}
+
+.header-menu a:link,
+.header-menu a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style: none;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header-menu li {
+    width: 150px;
+    margin-bottom: 0px;
+    padding: 2px 0;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.header-menu li a {
+    display: block;
+}
+
+.header-menu li:not(:first-child) {
+}

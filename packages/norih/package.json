@@ -28,11 +28,13 @@
         "develop": "gatsby develop",
         "format": "prettier --write '**/*.js'",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "add-entry": "bash src/scripts/addEntry/index.sh"
+        "add-entry": "bash src/scripts/addEntry/index.sh",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "devDependencies": {
         "@sentry/browser": "^4.2.3",
         "dotenv": "^6.1.0",
+        "gh-pages": "^2.0.1",
         "lodash": "^4.17.11",
         "prettier": "^1.14.2",
         "react-redux": "^5.1.0",
