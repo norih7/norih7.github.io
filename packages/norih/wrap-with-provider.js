@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 
-import createStore from "@stores";
+import createStore from "@norih/common/stores";
 
 const store = createStore();
 

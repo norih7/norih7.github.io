@@ -12,7 +12,7 @@ const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 for (let key in resolve.resolve.alias) {
     resolve.resolve.alias[key] = path.resolve(__dirname, resolve.resolve.alias[key]);
 }
-
+console.log(resolve);
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
     actions.setWebpackConfig(resolve);
 };

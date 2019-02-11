@@ -1,17 +1,7 @@
 {
-    "name": "root",
-    "private": true,
-    "scripts": {
-        "test": "jest"
-    },
-    "devDependencies": {
-        "babel-jest": "^23.6.0",
-        "babel-plugin-transform-flow-strip-types": "^6.22.0",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-flow": "^6.23.0",
-        "babel-preset-react": "^6.24.1",
-        "jest": "^23.6.0",
-        "lerna": "^3.4.0"
-    }
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.4.2"
+  }
 }

@@ -1,7 +1,7 @@
 import { createStore as reduxCreateStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 
-import rootSaga from "@middlewares/Api";
+import rootSaga from "@norih/common/middlewares/Api";
 
 const initialState = { count: 0 };
 const reducer = (state = initialState, action) => {

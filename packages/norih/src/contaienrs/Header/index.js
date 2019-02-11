@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Header from "@components/organisms/Header";
+import Header from "@norih/common/components/organisms/Header";
 
 const mapStateToProps = ({ count }) => {
     return { count };

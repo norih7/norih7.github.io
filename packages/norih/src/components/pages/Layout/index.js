@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql, Link } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
-import HeaderMenu from "@components/organisms/HeaderMenu";
+import HeaderMenu from "@norih/common/components/organisms/HeaderMenu";
 import css from "./index.module.css";
 
 const Layout = ({ children }) => (
