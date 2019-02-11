@@ -3,7 +3,7 @@
     margin-right: 15px;
     margin-bottom: 15px;
     width: 270px;
-    padding: 20px;
+
     background: #fff;
     border-radius: 10px;
 }
@@ -12,7 +12,13 @@
     margin: 0;
 }
 .skill li {
+    display: inline-block;
     list-style: none;
+}
+
+.skill li::after {
+    content: "/";
+    padding: 0 5px;
 }
 
 .tag {

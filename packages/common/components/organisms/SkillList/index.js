@@ -5,12 +5,8 @@ function SkillList(props) {
     const { category, children } = props;
     console.log(children);
     const list = children.map(item => {
-        return (
-            <li>
-                <span className={css["tag"]}>{item.experience}</span>
-                {item.name}
-            </li>
-        );
+        const { name, experience } = item;
+        return <li>{name}</li>;
     });
     return (
         <section className={css["skill"]}>
