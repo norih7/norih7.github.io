@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import css from "./style.module.css";
+import HeaderMenu from "@norih/common/components/organisms/HeaderMenu";
 
 const Header = props => {
     const { siteTitle, description, increment } = props;
@@ -20,6 +21,7 @@ const Header = props => {
                 </h1>
                 <p className={css["description"]}>{description}</p>
             </div>
+            <HeaderMenu />
         </div>
     );
 };

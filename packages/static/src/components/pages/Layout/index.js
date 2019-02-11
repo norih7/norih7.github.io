@@ -4,10 +4,9 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql, Link } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
-import HeaderMenu from "@norih/common/components/organisms/HeaderMenu";
 import css from "./index.module.css";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, contentName }) => (
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {
@@ -21,6 +20,13 @@ const Layout = ({ children }) => (
         `}
         render={data => {
             const { title, description } = data.site.siteMetadata;
+            const contentHeader =
+                typeof contentName == "undefined" ? null : (
+                    <div className={css["contentHeader"]}>
+                        <div className={css["container"]}>{contentName}</div>
+                    </div>
+                );
+
             return (
                 <>
                     <ErrorBoundary>
@@ -34,7 +40,7 @@ const Layout = ({ children }) => (
                             <html lang="ja" />
                         </Helmet>
                         <Header siteTitle={title} description={description} />
-                        <HeaderMenu />
+                        {contentHeader}
                         <div className={css["container"]}>{children}</div>
                     </ErrorBoundary>
                 </>

@@ -7,7 +7,7 @@ export default function BlogPost({ data }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
     return (
-        <Layout>
+        <Layout contentName="blog">
             <div className={css["entry"]}>
                 <header>
                     <h1>{frontmatter.title}</h1>

@@ -1,7 +1,4 @@
 .header-menu {
-    margin-bottom: 40px;
-    padding-bottom: 15px;
-    background: rgb(64, 157, 185);
 }
 
 .header-menu a:link,
@@ -29,10 +26,6 @@
 .header-menu li a {
     padding: 2px 0;
     display: block;
-}
-
-.header-menu li:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .header-menu li a:hover {

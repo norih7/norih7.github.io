@@ -1,38 +1,33 @@
 .header {
-    padding: 5px 60px 15px 60px;
+    padding: 10px 0px 15px 0px;
     background: rgb(64, 157, 185);
 }
 
-.header .container {
+.container {
     width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     position: relative;
 }
 
 .header h1 {
-    width: 150px;
     margin-bottom: 0;
-    padding-bottom: 5px;
     font-size: 1.6rem;
     font-weight: normal;
-    border-bottom: 2px dotted #fff;
 }
 
 .header h1 span {
     display: block;
-    width: 150px;
-    padding: 5px 0;
+    padding: 0px 0;
     position: relative;
     z-index: 10;
-    text-align: center;
-    background: rgb(64, 157, 185);
+    text-align: left;
     color: #fff;
 }
 
 .description {
     position: absolute;
-    top: 50%;
-    left: 180px;
+    top: 5px;
+    left: 80px;
     font-size: 0.8rem;
     color: #fff;
 }

@@ -8,7 +8,7 @@ const css = {
 const IndexPage = props => {
     const postList = props.data.allMarkdownRemark;
     return (
-        <Layout>
+        <Layout contentName="blog">
             {postList.edges.map(({ node }, i) => (
                 <div style={css["post"]}>
                     <Link to={node.frontmatter.path} className="link">

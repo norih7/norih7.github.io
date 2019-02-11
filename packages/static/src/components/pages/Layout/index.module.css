@@ -21,6 +21,7 @@ a:visited {
 a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    text-decoration: none;
 }
 a:active,
 a:hover {
@@ -28,8 +29,8 @@ a:hover {
 }
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted;
+    text-decoration: none;
+    text-decoration: none;
 }
 b,
 strong {
@@ -607,4 +608,13 @@ pre tt:after {
 .container {
     width: 900px;
     margin: 0 auto;
+    padding: 35px 0;
+}
+
+.content-header {
+    background: #eee;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #e2e2e2;
+    color: #555;
 }
