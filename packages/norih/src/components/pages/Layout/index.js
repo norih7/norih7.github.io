@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql, Link } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
+import HeaderMenu from "@components/organisms/HeaderMenu";
 import css from "./index.module.css";
 
 const Layout = ({ children }) => (
@@ -33,19 +34,7 @@ const Layout = ({ children }) => (
                             <html lang="ja" />
                         </Helmet>
                         <Header siteTitle={title} description={description} />
-                        <div className={css["headerMenu"]}>
-                            <ul>
-                                <li>
-                                    <Link to="/about/">about</Link>
-                                </li>
-                                <li>
-                                    <Link to="/works/">wip: works</Link>
-                                </li>
-                                <li>
-                                    <Link to="/">blog</Link>
-                                </li>
-                            </ul>
-                        </div>
+                        <HeaderMenu />
                         <div className={css["container"]}>{children}</div>
                     </ErrorBoundary>
                 </>

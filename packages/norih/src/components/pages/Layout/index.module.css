@@ -1,30 +1,7 @@
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
 body {
     margin: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-    display: block;
-}
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-}
+
 audio:not([controls]) {
     display: none;
     height: 0;
@@ -230,7 +207,7 @@ h1 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.2rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
@@ -247,7 +224,7 @@ h2 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
@@ -264,13 +241,13 @@ h3 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.38316rem;
+    font-size: 1.1rem;
     line-height: 1.1;
 }
 h4 {
@@ -281,7 +258,7 @@ h4 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
@@ -387,6 +364,7 @@ p {
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
+    line-height: 2;
 }
 figure {
     margin-left: 0;
@@ -629,40 +607,4 @@ pre tt:after {
 .container {
     width: 900px;
     margin: 0 auto;
-}
-
-.header-menu {
-    margin-bottom: 40px;
-    padding-bottom: 15px;
-    background: rgb(64, 157, 185);
-}
-
-.header-menu a:link,
-.header-menu a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-
-.header-menu ul {
-    display: flex;
-    list-style: none;
-    width: 900px;
-    margin: 0 auto;
-}
-
-.header-menu li {
-    width: 150px;
-    margin-bottom: 0px;
-    padding: 2px 0;
-    background: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    font-size: 0.8rem;
-    color: #fff;
-}
-
-.header-menu li a {
-    display: block;
-}
-
-.header-menu li:not(:first-child) {
 }
