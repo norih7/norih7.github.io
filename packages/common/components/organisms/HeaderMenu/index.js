@@ -9,7 +9,7 @@ const link = [
     },
     {
         to: "/works/",
-        title: "wip:works"
+        title: "works"
     },
     {
         to: "/",

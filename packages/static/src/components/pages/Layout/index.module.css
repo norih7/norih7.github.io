@@ -179,7 +179,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: hsla(0, 0%, 0%, 0.8);
+    color: hsla(0, 0%, 0%, 0.7);
     font-family: sans-serif;
     font-weight: normal;
     word-wrap: break-word;
@@ -616,5 +616,5 @@ pre tt:after {
     font-size: 1.2em;
     font-weight: bold;
     border-bottom: 1px solid #e2e2e2;
-    color: #555;
+    font-weight: bold;
 }
