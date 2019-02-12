@@ -9,7 +9,7 @@ const Works = () => (
         <section className={css["workList"]}>
             <ul>
                 <li>
-                    <img src="hoge.jpg" />
+                    <img src="../src/images/brushclover.png" />
                     <div className={css["description"]}>
                         <h2>brushClover</h2>
                         <p>2012.02</p>
