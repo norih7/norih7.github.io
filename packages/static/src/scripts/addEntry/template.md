@@ -1,6 +1,6 @@
 ---
 path: "/PATH"
-date: "ENTRY_DATE"
+date: "2019/02/18"
 title: "SampleTitle"
 tags: ["tag"]
 excerpt: "SampleExcerpt"
