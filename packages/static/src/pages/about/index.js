@@ -61,10 +61,10 @@ const SecondPage = () => (
             <h2>スキル</h2>
             <SkillList category="フロントエンド">
                 {[
-                    { name: "ES2015", experience: "1年以上" },
-                    { name: "Node.js", experience: "2年以上" },
+                    { name: "ES2015", experience: "3年ほど" },
+                    { name: "Node.js", experience: "3年以上" },
                     { name: "WebRTC", experience: "1年ほど" },
-                    { name: "React、Redux", experience: "2年以上" },
+                    { name: "React、Redux", experience: "3年ほど" },
                     { name: "Storybook", experience: "1年ほど" },
                     { name: "JS Test", experience: "1年以上" }
                 ]}
