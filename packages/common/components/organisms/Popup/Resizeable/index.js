@@ -1,4 +1,5 @@
 import React from "react";
+import css from "./style.module.css";
 
 const holdTopStyles = {
     top: 0,
@@ -29,7 +30,8 @@ const holdLeftStyles = {
     right: "-1px",
     width: "11px",
     height: "11px",
-    background: "#777"
+    background: "#777",
+    position: "absolute"
 };
 
 export default class Resizeable extends React.Component {

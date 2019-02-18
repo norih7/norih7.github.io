@@ -1,9 +1,13 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import Input from './Input';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
+import Popup from "../Popup";
 
-storiesOf('Input', module)
-  .add('with text', () => (
-    <Input>sample-text</Input>
-  ));
+storiesOf("organisms", module).add("Popup", () => {
+    const props = {
+        popup: {
+            list: [{ id: "hoge" }]
+        }
+    };
+    return <Popup popup={props.popup} handleToggle={action("close")} />;
+});

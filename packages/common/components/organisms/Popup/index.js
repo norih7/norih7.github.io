@@ -1,35 +1,22 @@
-// @flow
-import React      from 'react';
-import Resizeable from './ResizeableComponents.jsx';
-
-type Props = {
-    popup         : any,
-    handleToggle  : any,
-    handleThisSide: any,
-};
-
-type State = {
-    list: Array<mixed>,
-};
+import React from "react";
+import Resizeable from "./Resizeable";
 
 const initCount = {
-    id    : 1,
+    id: 1,
     zIndex: 0
 };
 
-export class Popup extends React.Component<Props, State> {
-    handleSetZIndex: Function;
-
+export default class Popup extends React.Component {
     constructor() {
         super();
         this.state = {
-            list : [initCount]
+            list: [initCount]
         };
 
         this.handleSetZIndex = this.handleSetZIndex.bind(this);
     }
 
-    handleSetZIndex(id: number) {
+    handleSetZIndex(id) {
         let zIndex = 0;
         let indexList = [];
         this.props.popup.list.map(data => {
@@ -38,11 +25,10 @@ export class Popup extends React.Component<Props, State> {
             }
 
             indexList.push({
-                id : data.id,
-                zIndex : zIndex
+                id: data.id,
+                zIndex: zIndex
             });
         });
- 
     }
 
     render() {
