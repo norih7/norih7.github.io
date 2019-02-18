@@ -1,8 +1,8 @@
-# norih7.github.io
+# react
 
 Reactのmonorepoプロジェクト。  
 Gatsbyでの静的サイトは下記のURLで公開しています。  
-<http://norih7.github.io>
+<https://norih7.github.io/react/>
 
 npmクライアントはyarnを利用しています。
 
@@ -31,9 +31,10 @@ packages以下の依存パッケージインストールやシンボリックリ
 
     $ lerna bootstrap 
 
-## Gatsby静的サイト
+## packages/static (Gatsby静的サイト)
 
-`packages/static` のディレクトリで実行できるコマンドの紹介です。
+Gatsbyによるポートフォリオ、ブログサイトの静的サイト。  
+以下は `packages/static` のディレクトリで実行できるコマンド紹介です。
 
 ### 開発サーバの起動
 
@@ -49,4 +50,21 @@ GraphQLの動作確認は下記のURLになります。
 
 ### GitHubPageへのデプロイ
 
+下記のコマンドでリモートリポジトリの「gh-pages」ブランチにGatsbyの静的ビルド結果をデプロイします。
+
     $ yarn deploy
+
+## packages/common
+
+React、Reduxの共通ファイルパッケージ。  
+以下は `packages/common` ディレクトリで実行できるコマンド紹介です。
+
+### Storybook起動
+
+ReactコンポーネントのStorybookを起動します。
+
+    $ yarn storybook
+
+起動後は下記のURLでローカルサーバにアクセスできます。  
+
+<http://localhost:6006/>

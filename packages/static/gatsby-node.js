@@ -7,12 +7,11 @@ const dotenv = require("dotenv").config({
 const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 
 // 現在のディレクトリのパスに置き換える
-// TODO: issue
 // 共通のutility関数として切り出しをする
 for (let key in resolve.resolve.alias) {
     resolve.resolve.alias[key] = path.resolve(__dirname, resolve.resolve.alias[key]);
 }
-console.log(resolve);
+
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
     actions.setWebpackConfig(resolve);
 };

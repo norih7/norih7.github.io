@@ -10,7 +10,7 @@ const Header = props => {
             <div className={css["container"]}>
                 <h1>
                     <Link
-                        to="/"
+                        to="/react/"
                         style={{
                             color: "white",
                             textDecoration: "none"

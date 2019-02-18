@@ -4,15 +4,15 @@ import css from "./style.module.css";
 
 const link = [
     {
-        to: "/about/",
+        to: "/react/about/",
         title: "about"
     },
     {
-        to: "/works/",
+        to: "/react/works/",
         title: "works"
     },
     {
-        to: "/",
+        to: "/react/",
         title: "blog"
     }
 ];
