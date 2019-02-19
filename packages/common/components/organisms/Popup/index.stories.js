@@ -9,5 +9,10 @@ storiesOf("organisms", module).add("Popup", () => {
             list: [{ id: "hoge" }]
         }
     };
-    return <Popup popup={props.popup} handleToggle={action("close")} />;
+    return (
+        <Popup popup={props.popup} handleToggle={action("close")}>
+            <p>content</p>
+            <p>ポップアップの移動、拡大縮小が可能</p>
+        </Popup>
+    );
 });

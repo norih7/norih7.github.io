@@ -1,2 +1,74 @@
-.hoge {
+.resizeable {
+    position: absolute;
+    background: #eee;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: #555;
+    cursor: pointer;
+}
+
+.right {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    background: #ccc;
+}
+
+.bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #ccc;
+}
+
+.resize {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 11px;
+    height: 11px;
+    background: #555;
+    cursor: pointer;
+}
+
+.resize::before {
+    position: absolute;
+    right: 3px;
+    bottom: 4px;
+    content: "";
+    width: 1px;
+    height: 5px;
+    background: #bbb;
+}
+
+.resize::after {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    content: "";
+    width: 5px;
+    height: 1px;
+    background: #bbb;
+}
+
+.close {
+    position: absolute;
+    top: -3px;
+    right: 3px;
+    color: #bbb;
+}
+
+.content {
+    padding: 10px;
+    color: #555;
+    text-align: center;
 }

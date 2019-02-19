@@ -1,49 +1,18 @@
 import React from "react";
 import css from "./style.module.css";
 
-const holdTopStyles = {
-    top: 0,
-    left: 0,
-    right: 0,
-    height: "20px",
-    background: "#ddd"
-};
-
-const holdRightStyles = {
-    top: 0,
-    bottom: 0,
-    right: 0,
-    width: "10px",
-    background: "#ccc"
-};
-
-const holdBottomStyles = {
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: "10px",
-    background: "#ccc"
-};
-
-const holdLeftStyles = {
-    bottom: "-1px",
-    right: "-1px",
-    width: "11px",
-    height: "11px",
-    background: "#777",
-    position: "absolute"
+const initialState = {
+    width: 200,
+    height: 200,
+    left: 50,
+    top: 50,
+    zIndex: 0
 };
 
 export default class Resizeable extends React.Component {
     constructor() {
         super();
-        this.state = {
-            width: 200,
-            left: 200,
-            top: 200,
-            zIndex: 0
-        };
-
+        this.state = initialState;
         this.setHeight = this.setHeight.bind(this);
         this.setWidth = this.setWidth.bind(this);
         this.getThisSideClassName = this.getThisSideClassName.bind(this);
@@ -51,12 +20,20 @@ export default class Resizeable extends React.Component {
     }
 
     setHeight(height) {
+        // 初期値より小さいサイズ変更は行わない
+        if (height < initialState.height) {
+            return;
+        }
         this.setState({
             height: height
         });
     }
 
     setWidth(width) {
+        // 初期値より小さいサイズ変更は行わない
+        if (width < initialState.width) {
+            return;
+        }
         this.setState({
             width: width
         });
@@ -71,41 +48,6 @@ export default class Resizeable extends React.Component {
     setOffsetTop(top) {
         this.setState({
             top: top
-        });
-    }
-
-    handleResizeRight(e) {
-        // クリックしたポップアップのoffsetLeftを取得
-        const offsetLeft = e.target.parentNode.offsetLeft;
-
-        // ドラッグ時に実行するコールバック関数の定義
-        const callback = ev => {
-            const width = ev.clientX - offsetLeft;
-            this.setWidth(width);
-        };
-
-        document.addEventListener("mousemove", callback);
-
-        document.addEventListener("mouseup", () => {
-            document.removeEventListener("mousemove", callback);
-        });
-    }
-
-    handleResizeBottom(e) {
-        // クリックしたポップアップのoffsetTopを取得
-        const offsetTop = e.target.parentNode.offsetTop;
-
-        // ドラッグ時に実行するコールバック関数の定義
-        const callback = ev => {
-            this.setHeight(ev.clientY - offsetTop);
-        };
-
-        // ドラッグ時に監視を開始
-        document.addEventListener("mousemove", callback);
-
-        // ドラッグ終了時は監視を停止
-        document.addEventListener("mouseup", () => {
-            document.removeEventListener("mousemove", callback);
         });
     }
 
@@ -188,41 +130,29 @@ export default class Resizeable extends React.Component {
         const target = e.target;
         const className = /resizeable/.test(target.className) === true ? target.className : target.parentNode.className;
         // TODO: ポップアップの並び順を変更
-        console.log(className);
     }
 
     render() {
+        const { children } = this.props;
+        const { width, height, top, left } = this.state;
+        const resizeableClassName = `${css["resizeable"]} ${this.getToggleClassName()} ${this.getThisSideClassName()}`;
         return (
             <div
-                className={
-                    "resizeable" +
-                    " popup-" +
-                    this.props.data.id +
-                    " " +
-                    this.getToggleClassName() +
-                    " " +
-                    this.getThisSideClassName()
-                }
+                className={resizeableClassName}
                 style={{
-                    background: "#eee",
-                    border: "1px solid #ccc",
-                    position: "absolute",
-                    userSelect: "none",
-                    width: this.state.width + "px",
-                    height: this.state.height + "px",
-                    top: this.state.top + "px",
-                    left: this.state.left + "px"
+                    width,
+                    height,
+                    top,
+                    left
                 }}
                 onClick={this.changeStackOverPopUp}
             >
-                <div className="hold" onMouseDown={this.handleDrug.bind(this)} style={holdTopStyles} />
-                <div className="hold" onMouseDown={this.handleResizeRight.bind(this)} style={holdRightStyles} />
-                <div className="hold" onMouseDown={this.handleResizeBottom.bind(this)} style={holdBottomStyles} />
-                <div className="hold" onMouseDown={this.handleResizeCorner.bind(this)} style={holdLeftStyles} />
-                <div className="close" onClick={this.props.handleToggle.bind(this)}>
+                <div className={`hold ${css["header"]}`} onMouseDown={this.handleDrug.bind(this)} />
+                <div className={`hold ${css["resize"]}`} onMouseDown={this.handleResizeCorner.bind(this)} />
+                <div className={css["close"]} onClick={this.props.handleToggle.bind(this)}>
                     ×
                 </div>
-                <div className="content">resize</div>
+                <div className={css["content"]}>{children}</div>
             </div>
         );
     }

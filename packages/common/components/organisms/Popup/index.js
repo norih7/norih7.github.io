@@ -32,6 +32,8 @@ export default class Popup extends React.Component {
     }
 
     render() {
+        const { children, popup, handleToggle, handleThisSide } = this.props;
+
         return (
             <div>
                 {this.props.popup.list.map(data => {
@@ -39,10 +41,12 @@ export default class Popup extends React.Component {
                         <Resizeable
                             data={data}
                             key={data.id}
-                            handleToggle={this.props.handleToggle}
-                            handleThisSide={this.props.handleThisSide}
-                            active={this.props.popup.active}
-                        />
+                            handleToggle={handleToggle}
+                            handleThisSide={handleThisSide}
+                            active={popup.active}
+                        >
+                            {children}
+                        </Resizeable>
                     );
                 })}
             </div>
