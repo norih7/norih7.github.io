@@ -1,7 +1,7 @@
 import React from "react";
 import css from "./style.css";
-import TitleDotted from "@components/molecules/Title/Dotted";
-import ListScroll from "@components/molecules/List/Scroll";
+import TitleDotted from "@norih/common/components/molecules/Title/Dotted";
+import ListScroll from "@norih/common/components/molecules/List/Scroll";
 
 function ScrollList(props) {
     const { style } = props;

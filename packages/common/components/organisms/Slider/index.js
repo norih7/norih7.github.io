@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.css";
-import { isNull } from "@utils/Validate";
+import { isNull } from "@norih/common/utils/Validate";
 
 const MAX_SLIDER = 100;
 const MIN_SLIDER = 0;

@@ -21,14 +21,7 @@ module.exports = {
                 loaders: ["style-loader", "css-loader?modules"]
             }
         ]
-    },
-    resolve: {
-        alias: {
-            "@containers": path.join(rootPath, "packages/common/containers"),
-            "@components": path.join(rootPath, "packages/common/components"),
-            "@stores": path.join(rootPath, "packages/common//stores"),
-            "@middlewares": path.join(rootPath, "packages/common/middlewares"),
-            "@utils": path.join(rootPath, "packages/common/utils")
-        }
     }
 };
+
+// TODO: Gatsbyの.storybook/webpack.config.jsの設定を記述する

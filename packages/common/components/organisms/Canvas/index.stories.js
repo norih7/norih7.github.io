@@ -1,5 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Canvas from "@components/organisms/Canvas";
+import Canvas from "@norih/common/components/organisms/Canvas";
 
 storiesOf("organisms", module).add("Canvas", () => <Canvas />);
