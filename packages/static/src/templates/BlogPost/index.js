@@ -12,8 +12,7 @@ export default function BlogPost({ data }) {
                 <header>
                     <h1>{frontmatter.title}</h1>
                 </header>
-
-                <p>{frontmatter.date}</p>
+                <p className={css["date"]}>{frontmatter.date}</p>
                 <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
             </div>
         </Layout>

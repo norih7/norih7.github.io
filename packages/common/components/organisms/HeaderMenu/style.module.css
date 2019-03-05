@@ -17,19 +17,13 @@
 .header-menu li {
     width: 150px;
     margin-bottom: 0px;
-    background: rgba(0, 0, 0, 0.4);
     text-align: center;
     font-size: 0.8rem;
     color: #fff;
 }
 
 .header-menu li a {
-    padding: 2px 0;
     display: block;
-}
-
-.header-menu li:nth-child(2) {
-    background: rgba(0, 0, 0, 0.6);
 }
 
 .header-menu li a:hover {
@@ -37,4 +31,9 @@
 }
 
 .header-menu li:not(:first-child) {
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: normal;
 }

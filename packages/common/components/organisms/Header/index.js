@@ -4,13 +4,13 @@ import css from "./style.module.css";
 import HeaderMenu from "@norih/common/components/organisms/HeaderMenu";
 
 const Header = props => {
-    const { siteTitle, description, increment } = props;
+    const { children, siteTitle, description, increment } = props;
     return (
         <div className={css["header"]}>
             <div className={css["container"]}>
-                <h1>
+                {/* <h1>
                     <Link
-                        to="/react/"
+                        to="/"
                         style={{
                             color: "white",
                             textDecoration: "none"
@@ -18,10 +18,10 @@ const Header = props => {
                     >
                         <span>{siteTitle}</span>
                     </Link>
-                </h1>
-                <p className={css["description"]}>{description}</p>
+                </h1> */}
+                {/* <p className={css["description"]}>{description}</p>*/}
+                <HeaderMenu />
             </div>
-            <HeaderMenu />
         </div>
     );
 };

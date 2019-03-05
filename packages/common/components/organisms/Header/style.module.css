@@ -1,27 +1,19 @@
 .header {
-    padding: 25px 0px 35px 0px;
-    background: rgb(64, 157, 185);
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    background: rgb(218, 94, 72);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 40px;
 }
 
 .container {
     width: 900px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 0px auto;
     position: relative;
-}
-
-.header h1 {
-    margin-bottom: 10px;
-    font-size: 1.6rem;
-    font-weight: normal;
-}
-
-.header h1 span {
-    display: block;
-    padding: 0px 0;
-    position: relative;
-    z-index: 10;
-    text-align: left;
-    color: #fff;
 }
 
 .description {

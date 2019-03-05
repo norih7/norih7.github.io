@@ -23,7 +23,7 @@ const Layout = ({ children, contentName }) => (
             const contentHeader =
                 typeof contentName == "undefined" ? null : (
                     <div className={css["contentHeader"]}>
-                        <div className={css["container"]}>{contentName}</div>
+                        <h2>{contentName}</h2>
                     </div>
                 );
 
@@ -39,8 +39,9 @@ const Layout = ({ children, contentName }) => (
                         >
                             <html lang="ja" />
                         </Helmet>
-                        <Header siteTitle={title} description={description} />
-                        {contentHeader}
+                        <Header siteTitle={title} description={description}>
+                            {contentHeader}
+                        </Header>
                         <div className={css["container"]}>{children}</div>
                     </ErrorBoundary>
                 </>

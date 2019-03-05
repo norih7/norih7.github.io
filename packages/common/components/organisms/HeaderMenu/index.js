@@ -4,16 +4,12 @@ import css from "./style.module.css";
 
 const link = [
     {
-        to: "/react/about/",
+        to: "/about/",
         title: "about"
     },
     {
-        to: "/react/works/",
+        to: "/works/",
         title: "works"
-    },
-    {
-        to: "/react/",
-        title: "blog"
     }
 ];
 
@@ -29,7 +25,10 @@ const HeaderMenu = props => {
 
     return (
         <div className={css["headerMenu"]}>
-            <ul>{list}</ul>
+            <ul>
+                <li>norih</li>
+                {list}
+            </ul>
         </div>
     );
 };
