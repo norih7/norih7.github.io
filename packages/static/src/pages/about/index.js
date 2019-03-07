@@ -2,51 +2,52 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../../components/pages/Layout";
 import SkillList from "@norih/common/components/organisms/SkillList";
+import css from "./index.module.css";
 
-const css = {
-    skill: {
-        float: "left",
-        marginRight: "15px",
-        marginBottom: "15px",
-        width: "270px",
-        padding: "20px",
-        background: "#fff",
-        borderRadius: "10px"
-    },
-    tag: {
-        padding: "5px",
-        background: "#bbb",
-        marginRight: "5px",
-        fontSize: "0.8em",
-        borderRadius: "3px",
-        color: "#fff"
-    },
-    title: {
-        minWidth: "150px",
-        display: "inline-block",
-        height: "30px",
-        background: "#444",
-        lineHeight: "30px",
-        fontSize: "0.9rem",
-        textAlign: "center",
-        fontWeight: "normal",
-        color: "#fff"
-    },
-    header: {
-        position: "absolute",
-        padding: "0 20px",
+// const css = {
+//     skill: {
+//         float: "left",
+//         marginRight: "15px",
+//         marginBottom: "15px",
+//         width: "270px",
+//         padding: "20px",
+//         background: "#fff",
+//         borderRadius: "10px"
+//     },
+//     tag: {
+//         padding: "5px",
+//         background: "#bbb",
+//         marginRight: "5px",
+//         fontSize: "0.8em",
+//         borderRadius: "3px",
+//         color: "#fff"
+//     },
+//     title: {
+//         minWidth: "150px",
+//         display: "inline-block",
+//         height: "30px",
+//         background: "#444",
+//         lineHeight: "30px",
+//         fontSize: "0.9rem",
+//         textAlign: "center",
+//         fontWeight: "normal",
+//         color: "#fff"
+//     },
+//     header: {
+//         position: "absolute",
+//         padding: "0 20px",
 
-        left: 0,
-        right: 0,
-        height: "30px",
-        background: "#e5e5e5"
-    },
-    container: {
-        width: "900px",
-        margin: "0 auto"
-    },
-    section: {}
-};
+//         left: 0,
+//         right: 0,
+//         height: "30px",
+//         background: "#e5e5e5"
+//     },
+//     container: {
+//         width: "900px",
+//         margin: "0 auto"
+//     },
+//     section: {}
+// };
 const SecondPage = () => (
     <Layout contentName="about">
         <section style={css["section"]}>

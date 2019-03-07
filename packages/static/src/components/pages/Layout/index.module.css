@@ -19,6 +19,28 @@ p,
 ul {
     margin-bottom: 1rem;
 }
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+a:link,
+a:visited {
+    color: rgb(192, 97, 73);
+}
+
+a:hover {
+    color: #454545;
+}
+
 .container {
     width: 900px;
     margin: 40px auto 0 auto;
