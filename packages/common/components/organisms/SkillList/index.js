@@ -3,7 +3,6 @@ import css from "./index.module.css";
 
 function SkillList(props) {
     const { category, children } = props;
-    console.log(children);
     const list = children.map(item => {
         const { name, experience } = item;
         return <li>{name}</li>;

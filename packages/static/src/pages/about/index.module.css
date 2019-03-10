@@ -1,2 +1,12 @@
-.hoge {
+.section {
+    padding-top: 40px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.horizon {
+    clear: both;
+    border: 0;
 }

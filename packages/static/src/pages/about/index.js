@@ -4,53 +4,9 @@ import Layout from "../../components/pages/Layout";
 import SkillList from "@norih/common/components/organisms/SkillList";
 import css from "./index.module.css";
 
-// const css = {
-//     skill: {
-//         float: "left",
-//         marginRight: "15px",
-//         marginBottom: "15px",
-//         width: "270px",
-//         padding: "20px",
-//         background: "#fff",
-//         borderRadius: "10px"
-//     },
-//     tag: {
-//         padding: "5px",
-//         background: "#bbb",
-//         marginRight: "5px",
-//         fontSize: "0.8em",
-//         borderRadius: "3px",
-//         color: "#fff"
-//     },
-//     title: {
-//         minWidth: "150px",
-//         display: "inline-block",
-//         height: "30px",
-//         background: "#444",
-//         lineHeight: "30px",
-//         fontSize: "0.9rem",
-//         textAlign: "center",
-//         fontWeight: "normal",
-//         color: "#fff"
-//     },
-//     header: {
-//         position: "absolute",
-//         padding: "0 20px",
-
-//         left: 0,
-//         right: 0,
-//         height: "30px",
-//         background: "#e5e5e5"
-//     },
-//     container: {
-//         width: "900px",
-//         margin: "0 auto"
-//     },
-//     section: {}
-// };
-const SecondPage = () => (
+const About = () => (
     <Layout contentName="about">
-        <section style={css["section"]}>
+        <section className={css["section"]}>
             <h2>Profile</h2>
             <p>
                 メイン業務としてバックエンドは6年以上、フロントエンドは3年ほど経験。
@@ -90,24 +46,26 @@ const SecondPage = () => (
                     { name: "Docker", experience: "1年以上" }
                 ]}
             </SkillList>
-            <hr style={{ clear: "both" }} />
         </section>
-        <h2>得意なこと</h2>
-        <h3>バランス感覚</h3>
-        <p>
-            バランス感覚はある方だと思います。
-            <br />
-            業務でもQCDを考えた線引きをするプロセスは大事にしています。
-            <br />
-            エンジニアのスキルとしても、フロントエンドを中心に浅く広く学ぶように心がけています。
-        </p>
-        <h3>人に対して説明すること</h3>
-        <p>
-            人に説明することは得意な方です。
-            <br />
-            Slackの画面共有を利用したペアプロでReact、Reduxのコーディングフォローすることも経験してきました。
-        </p>
+        <hr className={css["horizon"]} />
+        <section className={css["section"]}>
+            <h2>得意なこと</h2>
+            <h3>バランス感覚</h3>
+            <p>
+                バランス感覚はある方だと思います。
+                <br />
+                業務でもQCDを考えた線引きをするプロセスは大事にしています。
+                <br />
+                エンジニアのスキルとしても、フロントエンドを中心に浅く広く学ぶように心がけています。
+            </p>
+            <h3>人に対して説明すること</h3>
+            <p>
+                人に説明することは得意な方です。
+                <br />
+                Slackの画面共有を利用したペアプロでReact、Reduxのコーディングフォローすることも経験してきました。
+            </p>
+        </section>
     </Layout>
 );
 
-export default SecondPage;
+export default About;

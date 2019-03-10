@@ -3,13 +3,16 @@
     margin-right: 15px;
     margin-bottom: 15px;
     width: 270px;
-
-    background: #fff;
     border-radius: 10px;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
 }
 
 .skill ul {
     margin: 0;
+    padding: 0;
 }
 .skill li {
     display: inline-block;

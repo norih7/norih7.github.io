@@ -4,6 +4,8 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql, Link } from "gatsby";
 import ErrorBoundary from "../ErrorBoundary";
 import Header from "../../../contaienrs/Header";
+import Footer from "@norih/common/components/organisms/Footer";
+import Wrapper from "@norih/common/components/organisms/Wrapper";
 import css from "./index.module.css";
 
 const Layout = ({ children, contentName }) => (
@@ -42,7 +44,8 @@ const Layout = ({ children, contentName }) => (
                         <Header siteTitle={title} description={description}>
                             {contentHeader}
                         </Header>
-                        <div className={css["container"]}>{children}</div>
+                        <Wrapper style={{ padding: "40px 0" }}>{children}</Wrapper>
+                        <Footer>&copy; {title} </Footer>
                     </ErrorBoundary>
                 </>
             );

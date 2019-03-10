@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "norih",
+        title: "Treno",
         description: "WebEnginner Portfolio & Note"
     },
     plugins: [

@@ -1,7 +1,4 @@
 .header {
-    height: 40px;
-    padding: 0px 0px 0px 0px;
-    background: rgb(218, 94, 72);
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -22,4 +19,65 @@
     left: 80px;
     font-size: 0.8rem;
     color: #fff;
+}
+
+.menu {
+    height: 40px;
+    background: rgb(218, 94, 72);
+}
+
+.menu a:link,
+.menu a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu h1 {
+    float: left;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.menu h1 img {
+    margin-right: 10px;
+}
+
+.menu ul {
+    float: left;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu li a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li:not(:first-child) {
+}
+
+li.logo {
+    font-size: 1rem;
+    background: #eee;
+}
+
+li.logo a:link,
+li.logo a:visited {
+    color: #888;
+}
+
+.menu img {
+    margin-right: 5px;
 }
