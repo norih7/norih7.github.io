@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import css from "./style.module.css";
 import Wrapper from "@norih/common/components/organisms/Wrapper";
 
@@ -10,14 +9,18 @@ const link = [
     }
 ];
 
-const Header = props => {
-    const { children, siteTitle, description, increment } = props;
+export function createUri(path) {
+    return process.env.NODE_ENV === "development" ? path : `/react${path}`;
+}
 
-    const list = link.map(item => {
+function Header(props) {
+    const { siteTitle } = props;
+    const list = link.map((item, i) => {
         const { to, title } = item;
+        const key = `menu-list-${i}`;
         return (
-            <li>
-                <Link to={to}>{title}</Link>
+            <li key={key}>
+                <a href={createUri(to)}>{title}</a>
             </li>
         );
     });
@@ -26,9 +29,9 @@ const Header = props => {
         <div className={css["header"]}>
             <div className={css["menu"]}>
                 <Wrapper>
-                    <ul>
-                        <li className={css["logo"]}>
-                            <Link to="/">{siteTitle}</Link>
+                    <ul key="menu">
+                        <li className={css["logo"]} key="menu-list-home">
+                            <a href={createUri("/")}>{siteTitle}</a>
                         </li>
                         {list}
                     </ul>
@@ -36,6 +39,6 @@ const Header = props => {
             </div>
         </div>
     );
-};
+}
 
 export default Header;

@@ -4,7 +4,7 @@ import css from "./index.module.css";
 function SkillList(props) {
     const { category, children } = props;
     const list = children.map(item => {
-        const { name, experience } = item;
+        const { name } = item;
         return <li>{name}</li>;
     });
     return (

@@ -7,15 +7,18 @@ const IndexPage = props => {
     const postList = props.data.allMarkdownRemark;
     return (
         <Layout contentName="blog">
-            {postList.edges.map(({ node }, i) => (
-                <section className={css["entry"]}>
-                    <Link to={node.frontmatter.path} className="link">
-                        <h1>{node.frontmatter.title}</h1>
-                    </Link>
-                    <span className={css["date"]}>{node.frontmatter.date}</span>
-                    <p>{node.excerpt}</p>
-                </section>
-            ))}
+            {postList.edges.map(({ node }, i) => {
+                const key = `section-${i}`;
+                return (
+                    <section className={css["entry"]} key={key}>
+                        <Link to={node.frontmatter.path} className="link">
+                            <h1>{node.frontmatter.title}</h1>
+                        </Link>
+                        <span className={css["date"]}>{node.frontmatter.date}</span>
+                        <p>{node.excerpt}</p>
+                    </section>
+                );
+            })}
         </Layout>
     );
 };

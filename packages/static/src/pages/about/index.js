@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../../components/pages/Layout";
 import SkillList from "@norih/common/components/organisms/SkillList";
 import css from "./index.module.css";

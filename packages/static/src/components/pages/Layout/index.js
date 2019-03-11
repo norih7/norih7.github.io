@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { StaticQuery, graphql, Link } from "gatsby";
-import ErrorBoundary from "../ErrorBoundary";
+import { StaticQuery, graphql } from "gatsby";
 import Header from "../../../contaienrs/Header";
 import Footer from "@norih/common/components/organisms/Footer";
 import Wrapper from "@norih/common/components/organisms/Wrapper";
@@ -30,24 +29,22 @@ const Layout = ({ children, contentName }) => (
                 );
 
             return (
-                <>
-                    <ErrorBoundary>
-                        <Helmet
-                            title={data.site.siteMetadata.title}
-                            meta={[
-                                { name: "description", content: "Sample" },
-                                { name: "keywords", content: "sample, something" }
-                            ]}
-                        >
-                            <html lang="ja" />
-                        </Helmet>
-                        <Header siteTitle={title} description={description}>
-                            {contentHeader}
-                        </Header>
-                        <Wrapper style={{ padding: "40px 0" }}>{children}</Wrapper>
-                        <Footer>&copy; {title} </Footer>
-                    </ErrorBoundary>
-                </>
+                <React.Fragment>
+                    <Helmet
+                        title={data.site.siteMetadata.title}
+                        meta={[
+                            { name: "description", content: "Sample" },
+                            { name: "keywords", content: "sample, something" }
+                        ]}
+                    >
+                        <html lang="ja" />
+                    </Helmet>
+                    <Header siteTitle={title} description={description}>
+                        {contentHeader}
+                    </Header>
+                    <Wrapper style={{ padding: "40px 0" }}>{children}</Wrapper>
+                    <Footer>&copy; {title} </Footer>
+                </React.Fragment>
             );
         }}
     />
