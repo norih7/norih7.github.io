@@ -1,0 +1,1 @@
+{"data":{"markdownRemark":{"html":"<!-- import { Link, withPrefix } from \"gatsby\"; -->\n<p>Reactで開発をしていると異なるリポジトリ間でコンポーネントを共通利用したいと考えることがあります。</p>\n<!-- <img src={withPrefix(\"./test.png\")} /> -->","frontmatter":{"date":"March 05, 2018","path":"/frontend/monorepo","title":"monorepoという開発スタイル"}}},"pageContext":{}}
