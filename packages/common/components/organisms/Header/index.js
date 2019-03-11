@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./style.module.css";
 import Wrapper from "@norih/common/components/organisms/Wrapper";
+import { createUri } from "@norih/common/utils/Link";
 
 const link = [
     {
@@ -8,10 +9,6 @@ const link = [
         title: "about"
     }
 ];
-
-export function createUri(path) {
-    return process.env.NODE_ENV === "development" ? path : `/react${path}`;
-}
 
 function Header(props) {
     const { siteTitle } = props;
