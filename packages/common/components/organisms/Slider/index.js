@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./style.css";
+import styles from "./index.module.css";
+import Knob from "@norih/common/components/atoms/Knob";
 import { isNull } from "@norih/common/utils/Validate";
 
 const MAX_SLIDER = 100;
@@ -9,9 +10,10 @@ const DISPLAY_MAX_SLIDER = 90;
 export default class Slider extends React.Component {
     constructor(props) {
         super(props);
-        this.offsetLeft;
+        this.offsetLeft = null;
+        const { width } = this.props;
         this.state = {
-            width: 20
+            width
         };
         this.onDrag = this.onDrag.bind(this);
         this.setSliderWidth = this.setSliderWidth.bind(this);
@@ -53,18 +55,45 @@ export default class Slider extends React.Component {
         if (this.state.width >= DISPLAY_MAX_SLIDER) {
             inlineStyle.width = `${DISPLAY_MAX_SLIDER}px`;
         }
+
+        const { isDrag, width, skin, style } = this.props;
+
+        const props = {
+            slider: {
+                className: styles["slider"]
+            },
+            active: {
+                className: styles["sliderActive"],
+                style,
+                skin
+            }
+        };
+        if (isDrag === true) {
+            props.slider.onMouseDown = this.setSliderWidth;
+            props.slider.style = {
+                cursor: "pointer"
+            };
+            props.active.onMouseDown = this.onDrag;
+            props.active.style = Object.assign({}, style, inlineStyle);
+        }
         return (
-            <div className={styles["slider"]} onMouseDown={this.setSliderWidth}>
+            <div {...props.slider}>
                 <div
-                    className={styles["slider-bg"]}
+                    className={styles["bg"]}
                     ref={e => {
                         if (isNull(e) === true) return;
                         this.offsetLeft = e.offsetLeft;
                     }}
                 >
-                    <div className={styles["slider-active"]} onMouseDown={this.onDrag} style={inlineStyle} />
+                    <Knob {...props.active} />
                 </div>
             </div>
         );
     }
 }
+
+Slider.defaultProps = {
+    isDrag: true,
+    width: 20,
+    skin: "default"
+};

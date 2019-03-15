@@ -1,0 +1,14 @@
+.slider {
+    width: 100px;
+    padding: 5px 0;
+}
+
+.slider * {
+    user-select: none;
+}
+
+.bg {
+    height: 3px;
+    position: relative;
+    background: #ccc;
+}

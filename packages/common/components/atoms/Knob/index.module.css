@@ -1,23 +1,8 @@
-.slider {
-    width: 100px;
-    padding: 5px 0;
-    cursor: pointer;
-}
-
-.slider * {
-    user-select: none;
-}
-
-.slider-bg,
-.slider-active {
+.knob {
     height: 3px;
 }
-.slider-bg {
-    position: relative;
-    background: #ccc;
-}
 
-.slider-active {
+.knob {
     position: relative;
     top: 0;
     left: 0;
@@ -25,7 +10,10 @@
     background: #333;
 }
 
-.slider-active::after {
+.square {
+}
+
+.knob::after {
     position: absolute;
     right: -10px;
     top: -4px;
@@ -35,4 +23,12 @@
     height: 10px;
     background: #333;
     border-radius: 10px;
+}
+
+.square.knob::after {
+    border-radius: 0;
+}
+
+.hide.knob::after {
+    display: none;
 }

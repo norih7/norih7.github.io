@@ -24,6 +24,39 @@
     padding: 0 5px;
 }
 
+.skill header {
+    display: flex;
+    padding: 5px;
+    background: #ddd;
+}
+
+.skill h3 {
+    width: 150px;
+    margin: 0 0 0 5px;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    color: #666;
+}
+
+.skill dd {
+    margin: 0;
+}
+
+.skill .level {
+    width: 100px;
+    margin-top: 0px;
+    padding: 5px 15px;
+    background: #fff;
+}
+
+.skill .description {
+    clear: both;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
 .tag {
     padding: 4px 6px;
     background: rgb(150, 147, 133);

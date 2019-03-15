@@ -15,9 +15,9 @@ const About = () => (
                 Webエンジニアとして割とフルスタックに仕事をこなします。
             </p>
             <h2>スキル</h2>
-            <SkillList category="フロントエンド">
+            <SkillList category="frontend">
                 {[
-                    { name: "ES2015", experience: "3年ほど" },
+                    { name: "ES2015", level: "40", experience: "3年ほど" },
                     { name: "Node.js", experience: "3年以上" },
                     { name: "WebRTC", experience: "1年ほど" },
                     { name: "React、Redux", experience: "3年ほど" },
@@ -26,7 +26,7 @@ const About = () => (
                 ]}
             </SkillList>
 
-            <SkillList category="開発">
+            <SkillList category="develop">
                 {[
                     { name: "スクラム", experience: "1年以上" },
                     { name: "リモート開発", experience: "5年以上" },
@@ -37,7 +37,7 @@ const About = () => (
                 ]}
             </SkillList>
 
-            <SkillList category="バックエンド">
+            <SkillList category="backend">
                 {[
                     { name: "PHP", experience: "5年以上" },
                     { name: "MySQL", experience: "5年以上" },
