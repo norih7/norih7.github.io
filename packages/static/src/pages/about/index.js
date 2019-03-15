@@ -17,32 +17,32 @@ const About = () => (
             <h2>スキル</h2>
             <SkillList category="frontend">
                 {[
-                    { name: "ES2015", level: "40", experience: "3年ほど" },
-                    { name: "Node.js", experience: "3年以上" },
-                    { name: "WebRTC", experience: "1年ほど" },
-                    { name: "React、Redux", experience: "3年ほど" },
-                    { name: "Storybook", experience: "1年ほど" },
-                    { name: "JS Test", experience: "1年以上" }
+                    { name: "ES2015", level: "100", experience: "3年ほど" },
+                    { name: "React、Redux", level: "90", experience: "3年ほど" },
+                    { name: "Node.js", level: "70", experience: "3年以上" },
+                    { name: "JS Test", level: "60", experience: "1年以上" },
+                    { name: "Storybook", level: "50", experience: "1年ほど" },
+                    { name: "WebRTC", level: "40", experience: "1年ほど" }
                 ]}
             </SkillList>
 
             <SkillList category="develop">
                 {[
-                    { name: "スクラム", experience: "1年以上" },
-                    { name: "リモート開発", experience: "5年以上" },
-                    { name: "Slack", experience: "1年以上" },
-                    { name: "Git、GitHub", experience: "3年以上" },
-                    { name: "JIRA", experience: "3年以上" },
-                    { name: "UML", experience: "3年以上" }
+                    { name: "リモート開発", level: "80", experience: "5年以上" },
+                    { name: "Git、GitHub", level: "80", experience: "3年以上" },
+                    { name: "JIRA", level: "80", experience: "3年以上" },
+                    { name: "Slack", level: "70", experience: "1年以上" },
+                    { name: "スクラム", level: "50", experience: "1年以上" },
+                    { name: "UML", level: "40", experience: "3年以上" }
                 ]}
             </SkillList>
 
             <SkillList category="backend">
                 {[
-                    { name: "PHP", experience: "5年以上" },
-                    { name: "MySQL", experience: "5年以上" },
-                    { name: "Unix", experience: "5年以上" },
-                    { name: "Docker", experience: "1年以上" }
+                    { name: "PHP", level: "90", experience: "5年以上" },
+                    { name: "MySQL", level: "80", experience: "5年以上" },
+                    { name: "Unix", level: "70", experience: "5年以上" },
+                    { name: "Docker", level: "40", experience: "1年以上" }
                 ]}
             </SkillList>
         </section>
