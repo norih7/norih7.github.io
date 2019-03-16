@@ -2,6 +2,10 @@
     height: 3px;
 }
 
+.hide.knob {
+    height: 6px;
+}
+
 .knob {
     position: relative;
     top: 0;

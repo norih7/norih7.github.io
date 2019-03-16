@@ -5,7 +5,7 @@ import { isNull } from "@norih/common/utils/Validate";
 
 const MAX_SLIDER = 100;
 const MIN_SLIDER = 0;
-const DISPLAY_MAX_SLIDER = 90;
+const DISPLAY_MAX_SLIDER = 100;
 
 export default class Slider extends React.Component {
     constructor(props) {
@@ -52,11 +52,12 @@ export default class Slider extends React.Component {
         const inlineStyle = {
             width: `${this.state.width}px`
         };
+
         if (this.state.width >= DISPLAY_MAX_SLIDER) {
             inlineStyle.width = `${DISPLAY_MAX_SLIDER}px`;
         }
 
-        const { isDrag, width, skin, style } = this.props;
+        const { isDrag, skin, style } = this.props;
 
         const props = {
             slider: {
@@ -64,7 +65,7 @@ export default class Slider extends React.Component {
             },
             active: {
                 className: styles["sliderActive"],
-                style,
+                style: Object.assign({}, style, inlineStyle),
                 skin
             }
         };
@@ -74,12 +75,12 @@ export default class Slider extends React.Component {
                 cursor: "pointer"
             };
             props.active.onMouseDown = this.onDrag;
-            props.active.style = Object.assign({}, style, inlineStyle);
         }
+        const className = `${styles["bg"]} ${styles[skin]}`;
         return (
             <div {...props.slider}>
                 <div
-                    className={styles["bg"]}
+                    className={className}
                     ref={e => {
                         if (isNull(e) === true) return;
                         this.offsetLeft = e.offsetLeft;

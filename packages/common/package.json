@@ -14,7 +14,9 @@
     "license": "ISC",
     "devDependencies": {
         "@storybook/addon-actions": "^3.4.11",
+        "@storybook/addon-knobs": "^3.4.11",
         "@storybook/addon-links": "^3.4.11",
+        "@storybook/addon-info": "^3.4.11",
         "@storybook/addons": "^3.4.11",
         "@storybook/react": "^3.4.11",
         "babel-core": "^6.1.0",
@@ -40,11 +42,11 @@
         "webpack": "^2.1.5"
     },
     "dependencies": {
+        "@createjs/easeljs": "^2.0.0-beta.4",
+        "@createjs/tweenjs": "^2.0.0-beta.4",
         "npm": "^6.4.1",
         "redux-saga": "^0.16.2",
         "to": "^0.2.9",
-        "update": "^0.7.4",
-        "@createjs/easeljs": "^2.0.0-beta.4",
-        "@createjs/tweenjs": "^2.0.0-beta.4"
+        "update": "^0.7.4"
     }
 }

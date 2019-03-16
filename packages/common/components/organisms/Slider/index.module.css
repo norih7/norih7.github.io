@@ -12,3 +12,11 @@
     position: relative;
     background: #ccc;
 }
+
+.bg.default {
+    height: 3px;
+}
+
+.bg.hide {
+    height: 6px;
+}

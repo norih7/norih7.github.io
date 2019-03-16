@@ -1,4 +1,4 @@
-import { configure } from "@storybook/react";
+import { configure, addDecorator } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
 const req = require.context("../components", true, /\.stories\.js$/);
