@@ -1,4 +1,10 @@
 {
-    "presets": ["env", "react", "flow"],
-    "plugins": ["transform-flow-strip-types"]
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage"
+            }
+        ]
+    ]
 }
