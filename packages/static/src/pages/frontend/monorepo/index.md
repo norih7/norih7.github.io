@@ -6,7 +6,9 @@ tags: ["gatsby", "react"]
 excerpt: "SampleExcerpt"
 ---
 
-import { Link, withPrefix } from "gatsby";
-
 Reactで開発をしていると異なるリポジトリ間でコンポーネントを共通利用したいと考えることがあります。
 
+    import { Link, withPrefix } from "gatsby";
+    for (let i = 0; i < 10; i++) {
+        hogehoge();
+    }

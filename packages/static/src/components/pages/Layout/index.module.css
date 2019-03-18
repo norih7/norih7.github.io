@@ -8,7 +8,7 @@ ul {
 }
 
 body {
-    color: #454545;
+    color: #555;
 }
 
 p {
@@ -54,4 +54,14 @@ a:hover {
     width: 900px;
     margin: 0 auto;
     line-height: 40px;
+}
+
+code {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 30px;
+    letter-spacing: 0.1em;
+    line-height: 1.5rem;
+    background: #454545;
+    color: #eee;
 }

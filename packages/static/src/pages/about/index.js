@@ -3,18 +3,46 @@ import Layout from "../../components/pages/Layout";
 import SkillList from "@norih/common/components/organisms/SkillList";
 import css from "./index.module.css";
 
+const json = `{
+    handleName: "@norih7",
+    prefer: ["frontend", "react", "beer"],
+    description:
+        "サーバリプレイスといった地味な作業から、React+Reduxのモダンフロントエンド開発など幅広くやってます。" + 
+        "Webエンジニアとして割とフルスタックに仕事をこなします。"
+};`;
+
 const About = () => (
     <Layout contentName="about">
         <section className={css["section"]}>
-            <h2>Profile</h2>
+            <h2>About</h2>
             <p>
-                メイン業務としてバックエンドは6年以上、フロントエンドは3年ほど経験。
+                Webエンジニアのブログとポートフォリオ。Reactでいろいろ作ってみようというサイトです。
                 <br />
-                サーバリプレイスといった作業から、React+ReduxのモダンSPA開発など幅広くやってます。
+                monoreoで構成しており、Reactコンポーネントは下記のStorybookにまとめています。
                 <br />
-                Webエンジニアとして割とフルスタックに仕事をこなします。
+                <a href="">https://xxxxx/</a>
             </p>
-            <h2>スキル</h2>
+        </section>
+        <section className={css["section"]}>
+            <h2>Profile</h2>
+            <code>
+                <pre>{json}</pre>
+            </code>
+            <ul>
+                <li>
+                    <a href="https://github.com/norih7" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://qiita.com/norih" target="_blank">
+                        Qiita
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section className={css["section"]}>
+            <h2>Skill</h2>
             <SkillList category="frontend">
                 {[
                     { name: "ES2015", level: "100", experience: "3年ほど" },
@@ -47,23 +75,6 @@ const About = () => (
             </SkillList>
         </section>
         <hr className={css["horizon"]} />
-        <section className={css["section"]}>
-            <h2>得意なこと</h2>
-            <h3>バランス感覚</h3>
-            <p>
-                バランス感覚はある方だと思います。
-                <br />
-                業務でもQCDを考えた線引きをするプロセスは大事にしています。
-                <br />
-                エンジニアのスキルとしても、フロントエンドを中心に浅く広く学ぶように心がけています。
-            </p>
-            <h3>人に対して説明すること</h3>
-            <p>
-                人に説明することは得意な方です。
-                <br />
-                Slackの画面共有を利用したペアプロでReact、Reduxのコーディングフォローすることも経験してきました。
-            </p>
-        </section>
     </Layout>
 );
 
