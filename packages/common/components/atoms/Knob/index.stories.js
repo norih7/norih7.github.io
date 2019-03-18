@@ -9,6 +9,7 @@ const config = {
 };
 
 const story = storiesOf("atoms", module).addDecorator(withKnobs);
+
 story.add("Knob", () => {
     return <Knob skin={select("skin", config.skinList)} style={object("style", config.style)} />;
 });

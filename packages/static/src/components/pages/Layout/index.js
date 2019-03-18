@@ -7,6 +7,13 @@ import Footer from "@norih/common/components/organisms/Footer";
 import Wrapper from "@norih/common/components/organisms/Wrapper";
 import css from "./index.module.css";
 
+const menuList = [
+    {
+        to: "/about/",
+        title: "about"
+    }
+];
+
 const Layout = ({ children, contentName }) => (
     <StaticQuery
         query={graphql`
@@ -39,7 +46,7 @@ const Layout = ({ children, contentName }) => (
                     >
                         <html lang="ja" />
                     </Helmet>
-                    <Header siteTitle={title} description={description}>
+                    <Header siteTitle={title} description={description} menuList={menuList}>
                         {contentHeader}
                     </Header>
                     <Wrapper style={{ padding: "40px 0" }}>{children}</Wrapper>

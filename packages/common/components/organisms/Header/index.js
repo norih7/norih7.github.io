@@ -1,18 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 import css from "./style.module.css";
 import Wrapper from "@norih/common/components/organisms/Wrapper";
 import { createUri } from "@norih/common/utils/Link";
 
-const link = [
-    {
-        to: "/about/",
-        title: "about"
-    }
-];
-
+/**
+ * ヘッダーコンポーネント
+ * @param {Object} props
+ */
 function Header(props) {
-    const { siteTitle } = props;
-    const list = link.map((item, i) => {
+    const { siteTitle, menuList } = props;
+    const list = menuList.map((item, i) => {
         const { to, title } = item;
         const key = `menu-list-${i}`;
         return (
@@ -37,5 +35,15 @@ function Header(props) {
         </div>
     );
 }
+
+Header.propTypes = {
+    siteTitle: PropTypes.string,
+    menuList: PropTypes.array
+};
+
+Header.defaultProps = {
+    siteTitle: "",
+    menuList: []
+};
 
 export default Header;
