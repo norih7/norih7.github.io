@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes, { bool } from "prop-types";
 import styles from "./index.module.css";
 import Knob from "@norih/common/components/atoms/Knob";
 import { isNull } from "@norih/common/utils/Validate";
@@ -93,8 +94,16 @@ export default class Slider extends React.Component {
     }
 }
 
+Slider.propTypes = {
+    isDrag: PropTypes.bool,
+    width: PropTypes.number,
+    skin: PropTypes.string,
+    style: PropTypes.object
+};
+
 Slider.defaultProps = {
     isDrag: true,
     width: 20,
-    skin: "default"
+    skin: "default",
+    style: {}
 };

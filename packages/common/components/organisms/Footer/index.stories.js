@@ -6,10 +6,11 @@ import Footer from "@norih/common/components/organisms/Footer";
 const story = storiesOf("organisms", module).addDecorator(withKnobs);
 
 const defaultConfig = {
-    content: <div>Footer</div>
+    children: Footer
 };
 
 story.add("Footer", () => {
+    const { children } = defaultConfig;
     const props = {};
-    return <Footer {...props}>{defaultConfig.content}</Footer>;
+    return <Footer {...props}>{text("children", children)}</Footer>;
 });

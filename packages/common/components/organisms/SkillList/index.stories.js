@@ -1,12 +1,21 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { withKnobs, text, number } from "@storybook/addon-knobs";
 import SkillList from "@norih/common/components/organisms/SkillList";
 
-storiesOf("organisms", module).add("SkillList", () => {
+const story = storiesOf("organisms", module).addDecorator(withKnobs);
+const defaultConfig = {
+    name: "Name",
+    level: 80,
+    description: ""
+};
+
+story.add("SkillList", () => {
+    const { name, level, description } = defaultConfig;
     const skill = [
         {
-            name: "Name1",
-            level: 80,
+            name: text("name", name),
+            level: number("level", level),
             description: ""
         },
         {

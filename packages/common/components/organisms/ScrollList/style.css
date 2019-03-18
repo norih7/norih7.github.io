@@ -1,5 +1,6 @@
 .scroll-list {
-    height: 130px;
-    border: 1px solid #bbb;
+    height: 150px;
+    background: #eee;
+    border: 1px solid #ddd;
     position: relative;
 }

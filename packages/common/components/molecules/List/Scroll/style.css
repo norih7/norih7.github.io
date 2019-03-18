@@ -4,6 +4,8 @@
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: #eee;
+    border: 1px solid #eee;
+    background: #fff;
     overflow: auto;
+    color: #555;
 }
