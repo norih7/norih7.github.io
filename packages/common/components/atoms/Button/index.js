@@ -1,9 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
+import css from "./index.module.css";
 
 function Button(props) {
-    const { css, children } = props;
-    const { button } = css;
-    return <button className={button}>{children}</button>;
+    const { children } = props;
+    return <button className={css["button"]}>{children}</button>;
 }
+
+Button.propTypes = {};
 
 export default Button;
