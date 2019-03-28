@@ -1,12 +1,12 @@
 import * as React from "react";
-import Button from "@norih/common/components/atoms/Button";
+import TitleDotted from "@norih/common/components/molecules/Title/Dotted";
 import { shallow } from "enzyme";
 
-describe("atoms/Button", () => {
+describe("molecules/TitleDotted", () => {
     test("コンポーネントが存在すること", () => {
-        const wrapper = shallow(<Button />);
+        const wrapper = shallow(<TitleDotted />);
         // SFCなのでCSSのクラスがpropsに存在するか確認する
         const className = wrapper.props().className;
-        expect(className).toEqual("button");
+        expect(className).toEqual("title-dotted");
     });
 });

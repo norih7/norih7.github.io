@@ -1,12 +1,12 @@
 import * as React from "react";
-import Button from "@norih/common/components/atoms/Button";
+import Knob from "@norih/common/components/atoms/Knob";
 import { shallow } from "enzyme";
 
-describe("atoms/Button", () => {
+describe("atoms/Knob", () => {
     test("コンポーネントが存在すること", () => {
-        const wrapper = shallow(<Button />);
+        const wrapper = shallow(<Knob />);
         // SFCなのでCSSのクラスがpropsに存在するか確認する
         const className = wrapper.props().className;
-        expect(className).toEqual("button");
+        expect(className).toEqual("default knob");
     });
 });
