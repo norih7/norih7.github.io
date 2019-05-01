@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/pages/Layout";
 import SkillList from "@norih/common/components/organisms/SkillList";
 import css from "./index.module.css";
+import Button from "../../components/pages/Button";
 
 const json = `{
     handleName: "@norih7",
@@ -15,6 +16,7 @@ const About = () => (
     <Layout contentName="about">
         <section className={css["section"]}>
             <h2>About</h2>
+
             <p>
                 Webエンジニアのブログとポートフォリオ。Reactでいろいろ作ってみようというサイトです。
                 <br />
@@ -22,6 +24,7 @@ const About = () => (
                 <br />
                 <a href="">https://xxxxx/</a>
             </p>
+            <Button>sample</Button>
         </section>
         <section className={css["section"]}>
             <h2>Profile</h2>
