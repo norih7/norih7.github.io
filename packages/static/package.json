@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "dependencies": {
         "@norih/common": "1.0.0",
-        "css-loader": "^1.0.1",
+        "css-loader": "^2.1.1",
         "gatsby": "^2.0.60",
         "gatsby-plugin-flow": "^1.0.2",
         "gatsby-plugin-manifest": "^2.0.5",
@@ -18,7 +18,8 @@
         "react": "^16.5.1",
         "react-dom": "^16.5.1",
         "react-helmet": "^5.2.0",
-        "style-loader": "^0.23.1"
+        "style-loader": "^0.23.1",
+        "webpack": "^4.31.0"
     },
     "keywords": [
         "gatsby"
@@ -32,15 +33,16 @@
         "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "devDependencies": {
-        "@sentry/browser": "^4.2.3",
-        "dotenv": "^6.1.0",
+        "@babel/core": "^7.4.4",
+        "@sentry/browser": "^5.2.0",
+        "dotenv": "^8.0.0",
         "gh-pages": "^2.0.1",
         "lodash": "^4.17.11",
         "prettier": "^1.14.2",
-        "react-redux": "^5.1.0",
+        "react-redux": "^7.0.3",
         "redux": "^4.0.1",
-        "redux-saga": "^0.16.2",
-        "ts-loader": "^5.4.4",
+        "redux-saga": "^1.0.2",
+        "ts-loader": "^6.0.0",
         "typescript": "^3.4.5",
         "webpack-merge": "^4.1.4"
     }
