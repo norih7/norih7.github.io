@@ -1,0 +1,28 @@
+import { hoge } from ".";
+
+const localStorageMock = (() => {
+    const store = {};
+
+    return {
+        getItem: key => {
+            return store[key] || null;
+        },
+        setItem: (key, value) => {
+            store[key] = value.toString();
+        },
+        clear: () => {
+            store = {};
+        }
+    };
+})();
+
+Object.defineProperty(window, "localStorage", {
+    value: localStorageMock
+});
+
+describe("WebStorage", () => {
+    it("hoge", () => {
+        hoge();
+        expect("hoge").toBe("hoge");
+    });
+});
