@@ -31,7 +31,7 @@
     },
     "scripts": {
         "storybook": "start-storybook",
-        "build-storybook": "build-storybook -c .storybook",
+        "build-storybook": "build-storybook —-quiet -c .storybook",
         "test": "jest"
     }
 }
