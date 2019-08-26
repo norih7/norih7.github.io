@@ -15,18 +15,21 @@ function Header(props) {
         const key = `menu-list-${i}`;
         return (
             <li key={key}>
-                <a href={createUri(to)}>{title}</a>
+                <a href={createUri(to)}>
+                    <span>{title}</span>
+                </a>
             </li>
         );
     });
-
     return (
         <div className={css["header"]}>
             <div className={css["menu"]}>
                 <Wrapper>
                     <ul key="menu">
                         <li className={css["logo"]} key="menu-list-home">
-                            <a href={createUri("/")}>{siteTitle}</a>
+                            <a href={createUri("/")}>
+                                <span>{siteTitle}</span>
+                            </a>
                         </li>
                         {list}
                     </ul>

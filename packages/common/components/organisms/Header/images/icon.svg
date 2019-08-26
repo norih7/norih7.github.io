@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60.356" height="35.024" viewBox="0 0 60.356 35.024">
+  <g id="icon" transform="translate(-39.134 -114)">
+    <g id="長方形_1" data-name="長方形 1" transform="translate(39.134 114)" fill="#555" stroke="#fff" stroke-linejoin="round" stroke-width="2">
+      <rect width="60.356" height="35.024" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="58.356" height="33.024" rx="2" fill="none"/>
+    </g>
+    <path id="合体_1" data-name="合体 1" d="M0,9.292H0V1A1,1,0,0,1,1,0H55.363a1,1,0,0,1,1,1V8.855c-6.815-1.811-18.14-3.029-28.182-3.029C17.371,5.827,6.046,7.219,0,9.291Z" transform="translate(41.134 115.892)" fill="#c69978"/>
+    <rect id="長方形_2" data-name="長方形 2" width="6.406" height="11.722" rx="3.203" transform="translate(56.655 127.966)" fill="#f4e699"/>
+    <rect id="長方形_3" data-name="長方形 3" width="6.406" height="11.722" rx="3.203" transform="translate(77.593 127.966)" fill="#f4e699"/>
+  </g>
+</svg>

@@ -6,7 +6,7 @@ import Button from "../../components/pages/Button";
 
 const json = `{
     handleName: "@norih7",
-    prefer: ["frontend", "react", "beer"],
+    prefer: ["frontend", "react", "beer", "video game"],
     description:
         "サーバリプレイスといった地味な作業から、React+Reduxのモダンフロントエンド開発など幅広くやってます。" + 
         "Webエンジニアとして割とフルスタックに仕事をこなします。"
@@ -16,7 +16,6 @@ const About = () => (
     <Layout contentName="about">
         <section className={css["section"]}>
             <h2>About</h2>
-
             <p>
                 Webエンジニアのブログとポートフォリオ。Reactでいろいろ作ってみようというサイトです。
                 <br />
@@ -24,13 +23,12 @@ const About = () => (
                 <br />
                 <a href="">https://xxxxx/</a>
             </p>
-            <Button>sample</Button>
         </section>
         <section className={css["section"]}>
             <h2>Profile</h2>
-            <code>
-                <pre>{json}</pre>
-            </code>
+            <pre>
+                <code>{json}</code>
+            </pre>
             <ul>
                 <li>
                     <a href="https://github.com/norih7" target="_blank">
