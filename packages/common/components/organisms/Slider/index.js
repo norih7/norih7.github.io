@@ -96,14 +96,14 @@ export default class Slider extends React.Component {
 
 Slider.propTypes = {
     isDrag: PropTypes.bool,
-    width: PropTypes.number,
+    width: PropTypes.string,
     skin: PropTypes.string,
     style: PropTypes.object
 };
 
 Slider.defaultProps = {
     isDrag: true,
-    width: 20,
+    width: "20",
     skin: "default",
     style: {}
 };
