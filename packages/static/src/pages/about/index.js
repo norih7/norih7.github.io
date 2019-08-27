@@ -21,7 +21,9 @@ const About = () => (
                 <br />
                 monoreoで構成しており、Reactコンポーネントは下記のStorybookにまとめています。
                 <br />
-                <a href="">https://xxxxx/</a>
+                <a href="https://keen-rosalind-4c9a2b.netlify.com/?path=/story/atoms--button">
+                    https://keen-rosalind-4c9a2b.netlify.com
+                </a>
             </p>
         </section>
         <section className={css["section"]}>

@@ -54,6 +54,7 @@
 
 .menu li {
     width: 120px;
+    margin-right: 5px;
     text-align: center;
     font-size: 0.9rem;
     color: #fff;
@@ -79,8 +80,6 @@
 
 li.logo {
     width: 175px;
-    margin-right: 5px;
-
     font-size: 1em;
     background: url(./images/icon.svg) no-repeat;
     position: relative;
