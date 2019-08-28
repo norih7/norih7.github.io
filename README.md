@@ -2,7 +2,7 @@
 
 Reactのmonorepoプロジェクト。  
 Gatsbyでの静的サイトは下記のURLで公開しています。  
-<https://norih7.github.io/react/>
+<https://compassionate-beaver-d0f8ee.netlify.com/>
 
 npmクライアントはyarnを利用しています。
 
@@ -57,6 +57,9 @@ GraphQLの動作確認は下記のURLになります。
 ## packages/common
 
 React、Reduxの共通ファイルパッケージ。  
+masterブランチのStorybookは下記のURLで公開しています。  
+<https://keen-rosalind-4c9a2b.netlify.com>
+
 以下は `packages/common` ディレクトリで実行できるコマンド紹介です。
 
 ### Storybook起動
