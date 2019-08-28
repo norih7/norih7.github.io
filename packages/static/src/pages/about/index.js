@@ -77,6 +77,18 @@ const About = () => (
                 ]}
             </SkillList>
         </section>
+        <section className={css["section"]}>
+            <h2>Works/Speech</h2>
+            <h3>2019年</h3>
+            <ul>
+                <li>
+                    https://dmm.connpass.com/event/125120/
+                    <a href="https://github.com/norih7" target="_blank">
+                        最近のDMMのフロントエンドの動向とその先について
+                    </a>
+                </li>
+            </ul>
+        </section>
         <hr className={css["horizon"]} />
     </Layout>
 );
