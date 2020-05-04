@@ -49,7 +49,7 @@ const Layout = ({ children, contentName }) => (
                     <Header siteTitle={title} description={description} menuList={menuList}>
                         {contentHeader}
                     </Header>
-                    <Wrapper style={{ padding: "70px 0" }}>{children}</Wrapper>
+                    <Wrapper style={{ padding: "75px 0" }}>{children}</Wrapper>
                     <Footer>&copy; {title} </Footer>
                 </React.Fragment>
             );

@@ -1,5 +1,13 @@
 .entry {
-    padding-top: 40px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.entry h1 {
+    padding-bottom: 15px;
+    border-bottom: 5px solid #eee;
 }
 
 .date {

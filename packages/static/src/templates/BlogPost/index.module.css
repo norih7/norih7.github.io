@@ -1,5 +1,8 @@
 .entry {
-    padding-top: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 3px;
 }
 
 .entry h1 {
@@ -14,9 +17,9 @@
 
 .entry header {
     position: relative;
-    margin-bottom: 1rem;
-    padding: 25px 0;
-    border-bottom: 10px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #eee;
 }
 
 .date {
