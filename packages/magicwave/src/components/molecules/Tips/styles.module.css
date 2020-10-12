@@ -1,0 +1,26 @@
+.tips {
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.tips header {
+    margin-bottom: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bbb;
+}
+
+.tips header span {
+    margin-right: 4px;
+    background: #4c92a6;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.content {
+    line-height: 1.8em;
+}

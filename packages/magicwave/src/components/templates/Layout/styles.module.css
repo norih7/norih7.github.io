@@ -1,0 +1,57 @@
+.hoge {
+    font-weight: normal;
+}
+
+.header {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    padding-left: 30px;
+    font-size: 1.2em;
+    background: url(./images/title-icon.svg) no-repeat 0 50%;
+}
+
+.navigator {
+    margin: 0;
+    background: #666;
+}
+
+.navigator li {
+    display: inline-block;
+}
+
+.breadcrumb {
+    padding: 4px 0;
+    background: rgb(230, 228, 219);
+}
+
+.breadcrumb span {
+    padding: 4px 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+}
+
+.update {
+    padding: 12px 0;
+    background: #eee;
+    font-size: 0.8em;
+}
+
+.update dl {
+    display: flex;
+}
+.update dt {
+    background: #4c92a6;
+    border-radius: 3px;
+    color: #fff;
+}
+.update dt,
+.update dd {
+    padding: 2px 8px;
+}
+
+.contents {
+    padding: 20px 0;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.082" height="15.68" viewBox="0 0 26.082 15.68">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="26.082" height="15.68" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="title-icon" clip-path="url(#clip-path)">
+    <path id="前面オブジェクトで型抜き_15" data-name="前面オブジェクトで型抜き 15" d="M9.411,14.984h0l-.064-.037L6.4,12,13.327,0,15.94,2.614l.268.267.267.268,2.386,2.385L16.4,8l-1,1L12.86,11.535,12.4,12,9.412,14.984Z" transform="translate(7.221 0.349)" fill="#bcdb38"/>
+    <path id="前面オブジェクトで型抜き_16" data-name="前面オブジェクトで型抜き 16" d="M4.286,15.68h0L0,13.206,7.467.272,10.616,3.42,14.036,0l6.572,11.385-3.978,3.978L15.348,14.08l-1.732-1.731-3-3L7.079,12.884,4.286,15.679Z" transform="translate(0 0)" fill="#67a5c1"/>
+  </g>
+</svg>
