@@ -7,7 +7,7 @@
 
 .category-list a {
     display: block;
-    padding: 4px 12px;
+    padding: 6px 8px;
 }
 
 .category-list li :hover {
@@ -27,7 +27,7 @@
 }
 
 .category-list li {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     background: #f2f2f2;
     border: 1px solid #ddd;
     border-radius: 3px;

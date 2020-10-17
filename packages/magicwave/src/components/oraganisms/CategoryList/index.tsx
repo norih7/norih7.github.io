@@ -18,14 +18,14 @@ const CategoryList = (props: Props) => {
     const { name, style, isFlex, children } = props;
     const list = children.map((item, index) => {
         const { to, title } = item;
-        const style = isFlex ? { width: "200px" } : {};
+        const style = isFlex ? { width: "205px", marginRight: "4px" } : {};
         return (
             <li key={index} style={style}>
                 <Link to={to}>{title}</Link>
             </li>
         );
     });
-    const flex = isFlex ? { display: "flex" } : {};
+    const flex = isFlex ? { display: "flex", "flex-wrap": "wrap" } : {};
     return (
         <section className={styles["categoryList"]} style={style}>
             <h1>{name}</h1>
