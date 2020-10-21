@@ -3,8 +3,20 @@ import { useStaticQuery } from "gatsby";
 import { graphql } from "gatsby";
 import * as styles from "./styles.module.css";
 
-const Items = (props: any) => {
-    const { allItem, filter } = props;
+interface KeyValues {
+    [key: string]: string;
+}
+
+type Props = {
+    allItem: {
+        edges: [];
+    };
+    filter: KeyValues;
+    style?: {};
+};
+
+const Items = (props: Props) => {
+    const { allItem, filter, style } = props;
     const result = [] as any;
     Object.keys(filter).forEach((key: any) => {
         const find = allItem.edges.filter((item: any) => {
@@ -20,19 +32,16 @@ const Items = (props: any) => {
         list = result[key].map((item: any) => {
             const { node } = item;
             const { name } = node;
-            console.log("!!!", name);
             return <li>{name}</li>;
         });
     });
 
-    console.log("!!!", list);
     if (list.length == 0) {
-        console.log("!!!pass");
         list.push(<li>なし</li>);
     }
 
     return (
-        <div className={styles["items"]}>
+        <div className={styles["items"]} style={style}>
             <h3>入手アイテム</h3>
             <ul>{list}</ul>
         </div>

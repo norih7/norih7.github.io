@@ -52,7 +52,7 @@ const Layout = ({ children }: any) => {
                     <div style={{ width: "240px", marginLeft: "20px" }}>
                         <CategoryList name="攻略チャート" style={{ marginBottom: "10px" }}>
                             {[
-                                { to: "chart1", title: "トーティスの村〜ローンヴァレイ" },
+                                { to: "chart-1", title: "トーティスの村〜ローンヴァレイ" },
                                 { to: "hoge", title: "精霊の森〜モーリア坑道" },
                                 { to: "hoge", title: "アルヴァニスタの都〜過去ダオス城" },
                                 { to: "hoge", title: "超古代都市トール〜ダオス城" },
@@ -60,7 +60,7 @@ const Layout = ({ children }: any) => {
                         </CategoryList>
                         <CategoryList name="データ" style={{ marginBottom: "10px" }}>
                             {[
-                                { to: "chart1", title: "特技" },
+                                { to: "skill-cless", title: "特技" },
                                 { to: "hoge", title: "称号" },
                                 { to: "hoge", title: "料理レシピ" },
                                 { to: "hoge", title: "奥義・魔術・忍術・召喚術" },

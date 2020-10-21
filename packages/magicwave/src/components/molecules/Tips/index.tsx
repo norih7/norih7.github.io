@@ -1,6 +1,8 @@
 import * as React from "react";
 import * as styles from "./styles.module.css";
 import { Link } from "gatsby";
+import Balloon from "components/atoms/Balloon";
+import Section from "components/atoms/Section";
 
 type Props = {
     title: string;
@@ -11,13 +13,13 @@ type Props = {
 const Tips = (props: Props) => {
     const { title, children, style } = props;
     return (
-        <section className={styles["tips"]} style={style}>
+        <Section style={style}>
             <header>
-                <span>Tips</span>
+                <Balloon>Tips</Balloon>
                 {title}
             </header>
             <div className={styles["content"]}>{children}</div>
-        </section>
+        </Section>
     );
 };
 
